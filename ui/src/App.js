@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import './components/CreateUser';
-import UserDashboard from './components/UserDashboard';
+import UserDashboard from './components/UserDashboard/UserDashboard';
 
 function App() {
   return (

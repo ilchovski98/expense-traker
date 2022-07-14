@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './CreateUser.scss';
 
 function CreateUser(props) {
   const [state, setState] = useState({});
@@ -36,7 +37,8 @@ function CreateUser(props) {
     <div className="create-user">
       <form onSubmit={e => {handleSubmit(e)}}>
         <label>
-          First Name:
+          <span>First Name:</span>
+
           <input
             type="text"
             name="firstName"
@@ -45,7 +47,8 @@ function CreateUser(props) {
         </label>
 
         <label>
-          Last Name:
+          <span>Last Name:</span>
+
           <input
             type="text"
             name="lastName"
@@ -54,7 +57,8 @@ function CreateUser(props) {
         </label>
 
         <label>
-          Email:
+          <span>Email:</span>
+
           <input
             type="text"
             name="email"
@@ -63,7 +67,8 @@ function CreateUser(props) {
         </label>
 
         <label>
-          Password:
+          <span>Password:</span>
+
           <input
             type="password"
             name="password"
@@ -71,7 +76,7 @@ function CreateUser(props) {
           />
         </label>
 
-        <input type="submit" value="Submit" />
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

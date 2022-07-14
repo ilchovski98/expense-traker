@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import UsersTable from './UsersTable';
-import CreateUser from './CreateUser';
+import UsersTable from '../UserTable/UsersTable';
+import CreateUser from '../CreateUser/CreateUser';
 
 function UserDashboard() {
   const [data, setData] = useState([]);
