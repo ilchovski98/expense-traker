@@ -35,48 +35,54 @@ function CreateUser(props) {
 
   return (
     <div className="create-user">
-      <form onSubmit={e => {handleSubmit(e)}}>
-        <label>
-          <span>First Name:</span>
+      <form className="create-user__form" onSubmit={e => {handleSubmit(e)}}>
+        <div className="create-user__controls">
+          <label className="create-user__label" name="firstName">First Name:</label>
 
           <input
             type="text"
+            className="create-user__field"
             name="firstName"
             onChange={event => handleChange(event)}
           />
-        </label>
+        </div>
 
-        <label>
-          <span>Last Name:</span>
+        <div className="create-user__controls">
+          <label className="create-user__label" name="lastName">Last Name:</label>
 
           <input
             type="text"
+            className="create-user__field"
             name="lastName"
             onChange={event => handleChange(event)}
           />
-        </label>
+        </div>
 
-        <label>
-          <span>Email:</span>
+        <div className="create-user__controls">
+          <label className="create-user__label" name="email">Email:</label>
 
           <input
             type="text"
+            className="create-user__field"
             name="email"
             onChange={event => handleChange(event)}
           />
-        </label>
+        </div>
 
-        <label>
-          <span>Password:</span>
+        <div className="create-user__controls">
+          <label className="create-user__label" name="password">Password:</label>
 
           <input
             type="password"
+            className="create-user__field"
             name="password"
             onChange={event => handleChange(event)}
           />
-        </label>
+        </div>
 
-        <button type="submit">Submit</button>
+        <div className="create-user__actions">
+          <button type="submit" className="btn">Submit</button>
+        </div>
       </form>
     </div>
   );

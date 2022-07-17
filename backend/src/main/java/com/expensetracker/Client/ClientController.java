@@ -1,6 +1,7 @@
 package com.expensetracker.Client;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -37,8 +38,8 @@ public class ClientController {
         System.out.println(user);
     }
 
-    @DeleteMapping(path = "{clientId}")
-    void deleteCustomer(@PathVariable("clientId") Long id) {
-        System.out.println("DELETE REQUEST FOR CUSTOMER WITH ID " + id);
+    @DeleteMapping(path = "{email}")
+    long deleteCustomer(@PathVariable("email") String email) {
+        return clientService.deleteClientByEmail(email);
     }
 }

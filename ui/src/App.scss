@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 10px;
+  background-color: lightblue;
+  border: 1px solid grey;
+  padding: 10px;
+  transition: background-color .3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(132, 216, 244);
+  }
+}

@@ -4,42 +4,35 @@
 
 .create-user {
   max-width: 450px;
-  padding: 30px;
-  padding-left: 100px;
+  padding: 30px 20px;
 
-  form {
+  .create-user__form {
     display: flex;
     flex-direction: column;
     position: relative;
   }
 
-  label {
-    position: relative;
+  .create-user__controls {
+    display: flex;
+    align-items: center;
     margin-bottom: 5px;
   }
 
-  span {
-    position: absolute;
-    right: 100%;
-    top: 50%;
-    transform: translateY(-50%);
+  .create-user__label {
+    position: relative;
+    margin-bottom: 5px;
     white-space: nowrap;
+    min-width: 100px;
   }
 
-  input {
-    margin-left: 20px;
+  .create-user__field {
     border: 1px solid grey;
     border-radius: 10px;
     padding: 10px;
     width: 100%;
   }
 
-  button {
-    width: 100%;
-    margin-left: 20px;
-    border-radius: 10px;
-    background-color: lightblue;
-    border: 1px solid grey;
-    padding: 10px;
+  .create-user__actions {
+    padding-left: 100px;
   }
 }

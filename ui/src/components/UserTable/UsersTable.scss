@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------ *\
+  UsersTable
+\* ------------------------------------------------------------ */
+
+.users-table {
+  padding: 30px 20px;
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 5px 10px;
+  }
+
+  .users-table__head {
+    margin-bottom: 20px;
+
+    button {
+      max-width: 150px;
+    }
+  }
+
+  .users-table__btn-delete {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+
+    svg {
+      width: 13px;
+      height: auto;
+    }
+  }
+}

@@ -2,6 +2,7 @@ package com.expensetracker.Client;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 @Component
@@ -27,5 +28,9 @@ public class ClientService {
 
     Client createUser(Client client) {
         return clientRepository.save(client);
+    }
+
+    Long deleteClientByEmail(String email) {
+        return clientRepository.deleteByEmail(email);
     }
 }

@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import UserDashboard from './components/UserDashboard/UserDashboard';
 
 function App() {
