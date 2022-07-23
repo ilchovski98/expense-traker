@@ -1,8 +1,7 @@
-package com.expensetracker.Client;
+package com.expensetracker.client;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
