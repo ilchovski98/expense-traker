@@ -1,4 +1,4 @@
-package com.expensetracker.Client;
+package com.expensetracker.client;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

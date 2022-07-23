@@ -19,7 +19,7 @@ function UsersTable(props) {
         </thead>
 
         <tbody>
-          {props.data.length ? props.data.map((el, index) => {
+          {(props.data && props.data.length) ? props.data.map((el, index) => {
             return (
               <tr key={index}>
                 <td>{el.client_id}</td>

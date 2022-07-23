@@ -7,7 +7,9 @@ function UserDashboard() {
 
   const getData = async () => {
     async function fetchData() {
-      const result = await fetch('http://localhost:8080/api/v1/clients').then(res => res.json());
+      const result = await fetch('http://localhost:8080/api/v1/clients')
+      .then(res => res.json())
+      .catch(err => console.log(err));
       console.log(result);
       return result;
     }
@@ -16,7 +18,9 @@ function UserDashboard() {
   }
 
   const deleteClient = async (email) => {
-    const response = await fetch('http://localhost:8080/api/v1/clients/' + email, { method: 'DELETE' }).then(res => res.json());
+    const response = await fetch('http://localhost:8080/api/v1/clients/' + email, {method: 'DELETE'})
+    .then(res => res.json())
+    .catch(err => console.log(err));
 
     if (response > 0) {
       getData();
